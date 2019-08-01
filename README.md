@@ -6,9 +6,9 @@ A collection of methods arrived at through TDD to prepare for possible Java chal
 
 1.	Create a class.
 2.	Create a test for that class (Alt+Enter).
-3.	Allocate memory for the class in the test class (Challenges challenges;).
+3.	Declare the class in the test class (Challenges challenges;).
 4.	Create a test method.
-5.	Create a new instance of the class before each method (challenges = new Challenges();).
+5.	Initialize a new instance of the class before each method (challenges = new Challenges();).
 6.	Create a failing test.
 7.	Simulate the desired return of your class to make the test pass.
 8.	Refactor your class to produce the desired return.
@@ -44,6 +44,30 @@ This is the process of how we write the tests themselves.
 ### [FizzBuzz](https://www.youtube.com/watch?v=h36mQC3JFMo&list=PLqq-6Pq4lTTZgXnsBNQwCWdKR6O6Cgk1Z)
 
 #### [Requirements](https://www.hackerrank.com/challenges/fizzbuzz/problem)
+
+``` bash
+Write a short program that prints each number from 1 to 100 on a new line.
+
+For each multiple of 3, print "Fizz" instead of the number.
+
+For each multiple of 5, print "Buzz" instead of the number.
+
+For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+```
+
+#### Pseudo Code
+
+``` bash
+for i = 1 to n
+    if i % 3 AND i % 5 == 0, "FizzBuzz"
+    else if i % 3 == 0, "Fizz"
+    else if i % 5 == 0, "Buzz"
+    else print i
+```
+
+### [Two Sum](https://www.youtube.com/watch?v=TcsYEnMrnFo&list=PLqq-6Pq4lTTZgXnsBNQwCWdKR6O6Cgk1Z&index=2)
+
+#### [Requirements](https://leetcode.com/problems/two-sum/)
 
 ``` bash
 Write a short program that prints each number from 1 to 100 on a new line.

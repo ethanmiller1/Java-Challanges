@@ -2,6 +2,7 @@ package challenges;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Challenges {
@@ -12,7 +13,7 @@ public class Challenges {
 
     public List print100() {
         List numbers = new ArrayList();
-        for (int i = 1; i < 101; i++) {
+        for (int i = 1; i <= 100; i++) {
             if(i % 3 == 0 && i % 5 == 0) { numbers.add("FizzBuzz"); }
             else if(i % 3 == 0) { numbers.add("Fizz"); }
             else if(i % 5 == 0) { numbers.add("Buzz"); }
@@ -21,5 +22,11 @@ public class Challenges {
         }
 
         return numbers;
+    }
+
+    public List twoSum() {
+        List indices = new ArrayList();
+        indices = Arrays.asList(0, 2);
+        return indices;
     }
 }
