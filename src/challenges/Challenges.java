@@ -44,4 +44,8 @@ public class Challenges {
         String reverse = new StringBuilder(str).reverse().toString();
         return reverse;
     }
+
+    public boolean evenOrOdd() {
+        return false;
+    }
 }

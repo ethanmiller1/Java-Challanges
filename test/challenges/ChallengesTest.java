@@ -55,4 +55,9 @@ public class ChallengesTest {
         String str = "Hello";
         assertEquals(expected, challenges.reverseString(str));
     }
+
+    @Test
+    public void evenReturnsTrue() {
+        assertTrue(challenges.evenOrOdd());
+    }
 }
