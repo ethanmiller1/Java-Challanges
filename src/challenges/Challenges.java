@@ -45,7 +45,17 @@ public class Challenges {
         return reverse;
     }
 
+    // Variable belongs to class, no instance.
+    public static Integer count = 0;
+
     public boolean evenOrOdd() {
-        return true;
+        count++;
+        System.out.println(count);
+        if(count % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }

@@ -58,6 +58,8 @@ public class ChallengesTest {
 
     @Test
     public void evenReturnsTrue() {
+        // Get everything in the state that it needs to be in.
+        challenges.count = 1;
         assertTrue(challenges.evenOrOdd());
     }
 
