@@ -39,4 +39,13 @@ public class ChallengesTest {
         assertEquals(expected, challenges.twoSum(numbers, target));
 
     }
+
+    @Test
+    public void twoSumTest2() {
+        int[] numbers = new int[] { 2, 7, 11, 15 };
+        int target = 22;
+        List expected = Arrays.asList(1, 3);
+        assertEquals(expected, challenges.twoSum(numbers, target));
+
+    }
 }
