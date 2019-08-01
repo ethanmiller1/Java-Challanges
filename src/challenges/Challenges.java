@@ -21,10 +21,7 @@ public class Challenges {
         return numbers;
     }
 
-    public List twoSum() {
-        int[] numbers = new int[] { 2, 7, 11, 15 };
-        int target = 9;
-
+    public List twoSum(int[] numbers, int target) {
         Map<Integer, Integer> visitedNumbers = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
             // Delta is the number that completes the current number. Delta of 2 is 7, because 9 - 2 = 7.

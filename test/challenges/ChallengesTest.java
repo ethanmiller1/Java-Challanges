@@ -33,8 +33,10 @@ public class ChallengesTest {
 
     @Test
     public void twoSum() {
+        int[] numbers = new int[] { 2, 7, 11, 15 };
+        int target = 9;
         List expected = Arrays.asList(0, 1);
-        assertEquals(expected, challenges.twoSum());
+        assertEquals(expected, challenges.twoSum(numbers, target));
 
     }
 }
