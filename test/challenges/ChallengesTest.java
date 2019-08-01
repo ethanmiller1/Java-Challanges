@@ -3,6 +3,9 @@ package challenges;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -18,5 +21,12 @@ public class ChallengesTest {
     @Test
     public void helloWorld() {
         assertEquals("Hello World!", challenges.helloWorld());
+    }
+
+    @Test
+    public void print100() {
+        List actual = new ArrayList();
+        actual = challenges.print100();
+        assertEquals(100, actual.size());
     }
 }

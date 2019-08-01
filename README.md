@@ -33,3 +33,34 @@ This is the process of how we write the tests themselves.
 | ----------- | ----------- |
 | Alt+Enter | Create test from class, create method from test |
 | Alt+Insert| Generate Constructor, Getters / Setters, Test, etc. |
+| Alt+Shift+Click | Multiple Cursors |
+| Alt+J | Select next occurrence |
+| Alt+Shift+ J | Unselect this occurrence |
+| Ctrl+Shift+Alt+J | Select all occurrences |
+| Shift+F10 | Run |
+
+## Challenges
+
+### [FizzBuzz](https://www.youtube.com/watch?v=h36mQC3JFMo&list=PLqq-6Pq4lTTZgXnsBNQwCWdKR6O6Cgk1Z)
+
+#### [Requirements](https://www.hackerrank.com/challenges/fizzbuzz/problem)
+
+``` bash
+Write a short program that prints each number from 1 to 100 on a new line.
+
+For each multiple of 3, print "Fizz" instead of the number.
+
+For each multiple of 5, print "Buzz" instead of the number.
+
+For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+```
+
+#### Pseudo Code
+
+``` bash
+for i = 1 to n
+    if i % 3 AND i % 5 == 0, "FizzBuzz"
+    else if i % 3 == 0, "Fizz"
+    else if i % 5 == 0, "Buzz"
+    else print i
+```
