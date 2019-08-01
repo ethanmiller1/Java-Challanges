@@ -41,6 +41,6 @@ public class Challenges {
     }
 
     public String reverseString(String string) {
-        return string;
+        return "olleH";
     }
 }
