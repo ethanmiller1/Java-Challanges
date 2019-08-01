@@ -60,4 +60,9 @@ public class ChallengesTest {
     public void evenReturnsTrue() {
         assertTrue(challenges.evenOrOdd());
     }
+
+    @Test
+    public void evenReturnsFalse() {
+        assertFalse(challenges.evenOrOdd());
+    }
 }
