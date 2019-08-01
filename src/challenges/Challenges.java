@@ -26,7 +26,7 @@ public class Challenges {
 
     public List twoSum() {
         List indices = new ArrayList();
-        indices = Arrays.asList(0, 2);
+        indices = Arrays.asList(0, 1);
         return indices;
     }
 }
