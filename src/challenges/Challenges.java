@@ -11,7 +11,11 @@ public class Challenges {
     }
 
     public List print100() {
-        List lstFruits = new ArrayList();
-        return lstFruits;
+        List numbers = new ArrayList();
+        for (int i = 0; i < 100; i++) {
+            numbers.add(i);
+        }
+
+        return numbers;
     }
 }
