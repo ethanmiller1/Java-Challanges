@@ -48,4 +48,10 @@ public class ChallengesTest {
         assertEquals(expected, challenges.twoSum(numbers, target));
 
     }
+
+    @Test
+    public void reverseString() {
+        String expected = "olleH";
+        assertEquals(expected, challenges.reverseString("Hello"));
+    }
 }

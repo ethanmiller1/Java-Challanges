@@ -39,4 +39,8 @@ public class Challenges {
         // If no match is found...
         return new ArrayList(Arrays.asList(-1, -1));
     }
+
+    public String reverseString(String string) {
+        return string;
+    }
 }
