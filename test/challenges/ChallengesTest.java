@@ -52,6 +52,7 @@ public class ChallengesTest {
     @Test
     public void reverseString() {
         String expected = "olleH";
-        assertEquals(expected, challenges.reverseString("Hello"));
+        String str = "Hello";
+        assertEquals(expected, challenges.reverseString(str));
     }
 }

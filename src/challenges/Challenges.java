@@ -40,7 +40,8 @@ public class Challenges {
         return new ArrayList(Arrays.asList(-1, -1));
     }
 
-    public String reverseString(String string) {
-        return "olleH";
+    public String reverseString(String str) {
+        String reverse = new StringBuilder(str).reverse().toString();
+        return reverse;
     }
 }
