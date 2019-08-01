@@ -70,21 +70,29 @@ for i = 1 to n
 #### [Requirements](https://leetcode.com/problems/two-sum/)
 
 ``` bash
-Write a short program that prints each number from 1 to 100 on a new line.
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
-For each multiple of 3, print "Fizz" instead of the number.
-
-For each multiple of 5, print "Buzz" instead of the number.
-
-For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 ```
 
 #### Pseudo Code
 
 ``` bash
-for i = 1 to n
-    if i % 3 AND i % 5 == 0, "FizzBuzz"
-    else if i % 3 == 0, "Fizz"
-    else if i % 5 == 0, "Buzz"
-    else print i
+list: [2, 3, 7, 4, 8]
+result: 7
+expected: [1, 3]
+
+o(n^2) solution: outer / inner loop
+for i = 0 to n
+    for j = 0 to n
+    arr[i] + arr[j] == result
+
+Better solution:
+
+numMap = empty Map
+for i = 0 to n
+    delta = target - arr[i]
+    if numMap contains edlta
+        return [i, numMap(delta).value]
+    numMap.put (arr[i], i)
 ```

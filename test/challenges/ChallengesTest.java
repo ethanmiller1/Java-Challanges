@@ -33,8 +33,7 @@ public class ChallengesTest {
 
     @Test
     public void twoSum() {
-        List expected = new ArrayList();
-        expected = Arrays.asList(0, 1);
+        List expected = Arrays.asList(0, 1);
         assertEquals(expected, challenges.twoSum());
 
     }

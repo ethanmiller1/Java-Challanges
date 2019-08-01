@@ -1,9 +1,6 @@
 package challenges;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Challenges {
 
@@ -25,8 +22,24 @@ public class Challenges {
     }
 
     public List twoSum() {
-        List indices = new ArrayList();
-        indices = Arrays.asList(0, 1);
-        return indices;
+        int[] numbers = new int[] { 2, 7, 11, 15 };
+        int target = 9;
+
+        Map<Integer, Integer> visitedNumbers = new HashMap<>();
+        for (int i = 0; i < numbers.length; i++) {
+            // Delta is the number that completes the current number. Delta of 2 is 7, because 9 - 2 = 7.
+            int delta = target - numbers[i];
+            if (visitedNumbers.containsKey(delta)) {
+                // If a delta is found in the map, return its position as well as the current index position.
+                Integer[] indices = new Integer[] { visitedNumbers.get(delta), i };
+                // Convert array to list and return.
+                List indexes = Arrays.asList(indices);
+                return indexes;
+            }
+            // Add key / value pair to map to check it for a delta in the next iteration.
+            visitedNumbers.put(numbers[i], i);
+        }
+        // If no match is found...
+        return new ArrayList(Arrays.asList(-1, -1));
     }
 }
