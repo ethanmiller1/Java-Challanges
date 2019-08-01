@@ -7,13 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class ChallengesTest {
+
     Challenges challenges;
 
-
+    @BeforeEach
+    void init() {
+        challenges = new Challenges();
+    }
 
     @Test
     public void helloWorld() {
-        challenges = new Challenges();
         assertEquals("Hello World!", challenges.helloWorld());
     }
 }
