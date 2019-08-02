@@ -1,5 +1,6 @@
 package challenges;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Challenges {
@@ -45,7 +46,7 @@ public class Challenges {
         return reverse;
     }
 
-    // Variable belongs to class, no instance.
+    // Variable belongs to class, not instance.
     public static Integer count = 0;
 
     public boolean evenOrOdd() {
@@ -57,5 +58,28 @@ public class Challenges {
             return false;
         }
 
+    }
+
+    public List fibonacci(int limit) {
+
+        if (limit == 1) {
+            return Arrays.asList(1);
+        } else if (limit == 2) {
+            return Arrays.asList(1, 1);
+        }
+
+        List output = new ArrayList();
+        output.add(1);
+        output.add(1);
+        int fib1 = 1, fib2 = 1, fibonacci = 1;
+        for (int i = 3; i <= limit; i++ ) {
+            fibonacci = fib1 + fib2;
+            // Increment
+            fib1 = fib2;
+            fib2 = fibonacci;
+            output.add(fibonacci);
+        }
+
+        return output;
     }
 }

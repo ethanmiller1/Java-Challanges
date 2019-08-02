@@ -67,4 +67,11 @@ public class ChallengesTest {
     public void evenReturnsFalse() {
         assertFalse(challenges.evenOrOdd());
     }
+
+    @Test
+    public void fibonacci() {
+        List expected = Arrays.asList(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144);
+        int limit = 12;
+        assertEquals(expected, challenges.fibonacci(limit));
+    }
 }
