@@ -82,4 +82,21 @@ public class Challenges {
 
         return output;
     }
+
+    public boolean prime(int number) {
+        if (number < 0) {
+            return false;
+        }
+        if (number == 0 || number == 1) {
+            return false;
+        }
+        if (number == 2 || number == 3) {
+            return true;
+        }
+        if ((number * number - 1) % 24 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

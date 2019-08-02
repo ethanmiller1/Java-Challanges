@@ -74,4 +74,11 @@ public class ChallengesTest {
         int limit = 12;
         assertEquals(expected, challenges.fibonacci(limit));
     }
+
+    @Test
+    public void prime() {
+        boolean expected = true;
+        int number = 7;
+        assertEquals(expected, challenges.prime(number));
+    }
 }
