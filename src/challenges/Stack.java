@@ -7,9 +7,9 @@ public class Stack {
     private Object array[];
 
     // Hold the top element in the array.
-    private Object head;
+    private int head;
 
-    // Hold the size of the array.
+    // Hold the size limit of the array.
     private int capacity;
 
     // Construct the stack array when a new stack is generated.
@@ -23,4 +23,11 @@ public class Stack {
     }
 
 
+    public void push(int item) {
+        array[++head] = item;
+    }
+
+    public Object peak() {
+        return array[head];
+    }
 }
