@@ -24,6 +24,10 @@ public class Stack {
 
 
     public void push(Object item) {
+        if (isFull()) {
+            throw new RuntimeException("Stack is full");
+        }
+        // Set item to the element in front of the head element, and increment head by one.
         array[++head] = item;
     }
 
@@ -32,7 +36,18 @@ public class Stack {
     }
 
     public Object pop() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
         // Lower the head element by 1.
         return array[head--];
+    }
+
+    private boolean isEmpty() {
+        return head == -1;
+    }
+
+    private boolean isFull() {
+        return head == capacity - 1;
     }
 }

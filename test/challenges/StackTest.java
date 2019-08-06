@@ -41,4 +41,29 @@ class StackTest {
         assertEquals("First", peak);
         assertEquals("Second", pop);
     }
+
+    @Test
+    public void fullException() {
+        // Arrange
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(2);
+
+        // Act / Assert
+        assertThrows(RuntimeException.class,
+                () -> stack.push(3), "Stack is empty");
+    }
+
+    @Test
+    public void emptyException() {
+        assertThrows(RuntimeException.class,
+                () -> stack.pop(), "Stack is full");
+    }
 }
