@@ -26,4 +26,19 @@ class StackTest {
         // Assert
         assertEquals(1, result);
     }
+
+    @Test
+    public void pop() {
+        // Arrange
+        stack.push("First");
+        stack.push("Second");
+
+        // Act
+        Object pop = stack.pop();
+        Object peak = stack.peak();
+
+        // Assert
+        assertEquals("First", peak);
+        assertEquals("Second", pop);
+    }
 }

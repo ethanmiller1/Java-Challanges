@@ -23,11 +23,16 @@ public class Stack {
     }
 
 
-    public void push(int item) {
+    public void push(Object item) {
         array[++head] = item;
     }
 
     public Object peak() {
         return array[head];
+    }
+
+    public Object pop() {
+        // Lower the head element by 1.
+        return array[head--];
     }
 }
